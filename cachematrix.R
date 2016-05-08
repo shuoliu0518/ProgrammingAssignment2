@@ -2,6 +2,7 @@
 ## functions do
 ## Calculate the inverse matrix, if once calculated, then use the cache, if not, will do the calculation
 ## Write a short comment describing this function
+## initial the matrix, then set, get, setinverse, getinverse for the matrix 
 
 makeCacheMatrix <- function(x = matrix()) {
 inversematrix <- NULL 
@@ -37,7 +38,7 @@ inversematrix <- NULL
 
 
 ## Write a short comment describing this function
-
+## check whether the inversematrix has been calculated or not
 cacheSolve <- function(x, ...) {
   inv <- m$getinverse()
   if(!is.null(inv)) 
